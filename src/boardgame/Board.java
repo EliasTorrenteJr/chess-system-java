@@ -31,6 +31,12 @@ public class Board {
 		this.columns = columns;
 	}
 	 
-	 
+	 // Método Board.Piece com parametros row & colmumn e sua sobrecarga para determinar a position
+	public Piece piece(int row, int column) {
+		return pieces[row][column];
+	}
 	
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 }
